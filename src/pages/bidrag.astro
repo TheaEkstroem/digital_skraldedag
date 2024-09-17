@@ -6,11 +6,11 @@ import Link from "../components/Link.astro";
 
 <MainLayout title="Del dit bidrag">
 
-<section class="grid grid-cols-2">
+<section class="grid md:grid-cols-2">
 
     <div id="form" class="border mt-9 p-20 mx-auto ">
         <h3 class="text-xl font-bold pb-4">Del dit bidrag!</h3>
-        <form class="grid gap-4 w-full" action="" name="Køb Form" data-netlify="true">
+        <form class="grid gap-4 " action="" name="Køb Form" data-netlify="true">
           <!-- Navn -->
           <div>
             <label for="navn" class="block text-sm font-medium">Fulde navn</label>
@@ -18,7 +18,7 @@ import Link from "../components/Link.astro";
               type="text"
               id="navn"
               placeholder="Skriv dit fulde navn her"
-              class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 sm:text-sm"
+              class="mt-1 block w-full  border-gray-300 shadow-sm focus:border-blue-500 sm:text-sm"
             />
           </div>
     
@@ -29,7 +29,7 @@ import Link from "../components/Link.astro";
               type="email"
               id="email"
               placeholder="Skriv din Email her"
-              class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 sm:text-sm"
+              class="mt-1 block w-full  border-gray-300 shadow-sm focus:border-blue-500 sm:text-sm"
             />
           </div>
     
@@ -42,7 +42,7 @@ import Link from "../components/Link.astro";
               type="text"
               id="organisation"
               placeholder="Skriv hvilken organisation du kommer fra her"
-              class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 sm:text-sm"
+              class="mt-1 block w-full  border-gray-300 shadow-sm focus:border-blue-500 sm:text-sm"
             />
           </div>
     
@@ -55,7 +55,7 @@ import Link from "../components/Link.astro";
               type="number"
               id="antal deltagere"
               placeholder="Skriv antal deltagere her"
-              class="block w-full mt-1 rounded-md border-gray-300 shadow-sm focus:border-blue-500 text-sm"
+              class="block w-full mt-1  border-gray-300 shadow-sm focus:border-blue-500 text-sm"
             />
           </div>
     
@@ -68,7 +68,7 @@ import Link from "../components/Link.astro";
               type="number"
               id="antal GB slettet"
               placeholder="Skriv hvor mange GB du/I har slettet"
-              class="block w-full mt-1 rounded-md border-gray-300 shadow-sm focus:border-blue-500 text-sm"
+              class="block w-full mt-1  border-gray-300 shadow-sm focus:border-blue-500 text-sm"
             />
           </div>
     

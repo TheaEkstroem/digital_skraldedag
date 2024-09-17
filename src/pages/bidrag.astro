@@ -1,10 +1,114 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-import Button from '../components/Button.astro';
-import Link from '../components/Link.astro';
-
+import Button from "../components/Button.astro";
+import Link from "../components/Link.astro";
 ---
+
 <MainLayout title="Del dit bidrag">
- 
+
+<section class="grid md:grid-cols-2">
+
+    <div id="form" class="border mt-9 p-20 mx-auto ">
+        <h3 class="text-xl font-bold pb-4">Del dit bidrag!</h3>
+        <form class="grid gap-4 " action="" name="Køb Form" data-netlify="true">
+          <!-- Navn -->
+          <div>
+            <label for="navn" class="block text-sm font-medium">Fulde navn</label>
+            <input
+              type="text"
+              id="navn"
+              placeholder="Skriv dit fulde navn her"
+              class="mt-1 block w-full  border-gray-300 shadow-sm focus:border-blue-500 sm:text-sm"
+            />
+          </div>
+    
+          <!-- Email -->
+          <div>
+            <label for="email" class="block text-sm font-medium">Email</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Skriv din Email her"
+              class="mt-1 block w-full  border-gray-300 shadow-sm focus:border-blue-500 sm:text-sm"
+            />
+          </div>
+    
+          <!-- Organisation -->
+          <div>
+            <label for="organisation" class="block text-sm font-medium"
+              >Organisation (valgfri)</label
+            >
+            <input
+              type="text"
+              id="organisation"
+              placeholder="Skriv hvilken organisation du kommer fra her"
+              class="mt-1 block w-full  border-gray-300 shadow-sm focus:border-blue-500 sm:text-sm"
+            />
+          </div>
+    
+          <!-- Antal deltagere -->
+          <div>
+            <label for="antal deltagere" class="block text-sm font-medium"
+              >Antal deltagere</label
+            >
+            <input
+              type="number"
+              id="antal deltagere"
+              placeholder="Skriv antal deltagere her"
+              class="block w-full mt-1  border-gray-300 shadow-sm focus:border-blue-500 text-sm"
+            />
+          </div>
+    
+          <!-- Antal GB slettet -->
+          <div>
+            <label for="antal GB slettet" class="block text-sm font-medium"
+              >Hvor meget slettet (in GB)</label
+            >
+            <input
+              type="number"
+              id="antal GB slettet"
+              placeholder="Skriv hvor mange GB du/I har slettet"
+              class="block w-full mt-1  border-gray-300 shadow-sm focus:border-blue-500 text-sm"
+            />
+          </div>
+    
+          <!-- enig i -->
+          <div class="flex items-center">
+            <input
+              type="checkbox"
+              id="enige"
+              class="h-4 w-4 border-gray-300 rounded-lg focus:ring-blue-500"
+            />
+            <label for="enig" class="ml-2 text-sm"
+              >*Jeg er enig i <span class="text-sky-500 underline"
+                >Lets Do it, blabla</span
+              >
+            </label>
+          </div>
+    
+          <!-- Nyhedsbred -->
+          <div class="flex items-center">
+            <input
+              type="checkbox"
+              id="nyhedsbrev"
+              class="h-4 w-4 border-gray-300 rounded-lg focus:ring-blue-500"
+            />
+            <label for="nyhedsbrev" class="ml-2 text-sm"
+              >Jeg vil gerne modtage nyhedsbreve!
+              
+            </label>
+          </div>
+    
+          <!-- Submit Button -->
+          <div class="w-full">
+            <Button type="submit" variant="primary" size="small">
+              Indsend</Button
+            >
+          </div>
+        </form>
+    </div>
+
+</section>
+
 
 </MainLayout>

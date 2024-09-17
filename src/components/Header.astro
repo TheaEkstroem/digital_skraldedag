@@ -12,7 +12,7 @@ import Link from "../components/Link.astro";
     <div class="logo">
       <a href="/">
         <img
-          class="w-[80px] h-[80px] object-cove"
+          class="w-[70px] h-[70px] object-cove"
           src="logo.webp"
           alt="Logo til digitalt skrald"
         />
@@ -20,17 +20,18 @@ import Link from "../components/Link.astro";
     </div>
 
     <!-- nav -->
-    <nav id="desktopmenu" class="hidden lg:block">
-      <ul class="flex flex-row gap-8">
-        <li class=""><Link size="text-mg" href="/hvordan">Hvordan</Link></li>
-        <li class=""> <Link size="text-mg" href="/bidrag">Del dit bidrag</Link></li>
-      </ul>
-      <Button variant="primary" size="medium" href="/bidrag">
-        Del dit bidrag</Button
-      >
-      
-      <!-- Dark mode knap? -->
-    </nav>
+    <nav id="desktopmenu" class="hidden lg:flex lg:flex-row lg:items-center gap-10">
+        <ul class="flex flex-row gap-10">
+          <li>
+            <Link size="text-mg" variant="secondary" href="/hvordan">Hvordan</Link>
+          </li>
+          <li>
+            <Link size="text-mg" variant="secondary" href="/bidrag">Del dit bidrag</Link>
+          </li>
+        </ul>
+        <Link size="text-mg" variant="primary" href="/bidrag" class="ml-8">Del dit bidrag</Link>
+        <!-- Dark mode knap? -->
+      </nav>
     <button
       id="burgermenu"
       class="lg:hidden"
@@ -50,10 +51,8 @@ import Link from "../components/Link.astro";
     x-on:click.outside="showmenu = false"
   >
     <ul class="">
-      <li class=""><Link size="text-mg" href="/hvordan">Hvordan</Link></li>
-      <li class="">
-        <Link size="text-mg" href="/bidrag">Del dit bidrag</Link>
-      </li>
-    </ul>
+        <li class=""><Link size="text-mg" variant="secondary"  href="/hvordan">Hvordan</Link></li>
+        <li class=""> <Link size="text-mg" variant="secondary"  href="/bidrag">Del dit bidrag</Link></li>
+      </ul>
   </nav>
 </div>

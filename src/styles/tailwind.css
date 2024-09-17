@@ -2,6 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base{
-
+@layer base {
+  h1 {
+    color: #1e1c1c;
+  }
+  h2 {
+    color: #1e1c1c;
+    font-size: 45px;
+  }
+  h3 {
+    color: #1e1c1c;
+    font-size: 45px;
+  }
+  h4 {
+    color: #1e1c1c;
+    font-size: 24px;
+  }
+}
+h5 {
+  color: #1e1c1c;
+  font-size: 20px;
+}
+p {
+  color: #1e1c1c;
+  font-size: 16px;
+}
+.background-color {
+  background-color: #f8f5ee;
 }

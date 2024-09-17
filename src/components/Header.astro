@@ -2,6 +2,7 @@
 import Button from "../components/Button.astro";
 import Link from "../components/Link.astro";
 ---
+
 <div
   x-data="{ showmenu: false }"
   class="px-10 py-8 fixed top-0 left-0 z-50 w-full bg-[#F8F5EE] shadow-sm lg:static lg:shadow-none"
@@ -20,18 +21,39 @@ import Link from "../components/Link.astro";
     </div>
 
     <!-- nav -->
-    <nav id="desktopmenu" class="hidden lg:flex lg:flex-row lg:items-center gap-10">
-        <ul class="flex flex-row gap-10">
-          <li>
-            <Link size="text-mg" variant="secondary" href="/hvordan">Hvordan deltager man</Link>
-          </li>
-         <!--  <li>
+    <nav
+      id="desktopmenu"
+      class="hidden lg:flex lg:flex-row lg:items-center gap-10"
+    >
+      <ul class="flex flex-row gap-10">
+        <li>
+          <Link size="text-mg" variant="secondary" href="/hvordan"
+            >Hvordan deltager man</Link
+          >
+        </li>
+        <!--  <li>
             <Link size="text-mg" variant="secondary" href="/Ressourcer">Ressourcer</Link>
           </li> -->
-        </ul>
-        <Link size="text-mg" variant="primary" href="/bidrag" class="ml-8">Del dit bidrag</Link>
-        <!-- Dark mode knap? -->
-      </nav>
+      </ul>
+      <Link size="text-mg" variant="primary" href="/bidrag" class="ml-8"
+        >Del dit bidrag</Link
+      >
+      <button class="grid bg-[#1E1C1C] p-1 w-20 rounded-full">
+        <div class="bg-white rounded-full block w-min p-1 ml-auto">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+            class="size-4"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M7.455 2.004a.75.75 0 0 1 .26.77 7 7 0 0 0 9.958 7.967.75.75 0 0 1 1.067.853A8.5 8.5 0 1 1 6.647 1.921a.75.75 0 0 1 .808.083Z"
+              clip-rule="evenodd"></path>
+          </svg>
+        </div>
+      </button>
+    </nav>
     <button
       id="burgermenu"
       class="lg:hidden"
@@ -51,8 +73,14 @@ import Link from "../components/Link.astro";
     x-on:click.outside="showmenu = false"
   >
     <ul class="">
-        <li class=""><Link size="text-mg" variant="secondary"  href="/hvordan">Hvordan deltager man</Link></li>
-        <li class=""> <Link size="text-mg" variant="secondary"  href="/bidrag">Del dit bidrag</Link></li>
-      </ul>
+      <li class="">
+        <Link size="text-mg" variant="secondary" href="/hvordan"
+          >Hvordan deltager man</Link>
+      </li>
+      <li class="">
+        <Link size="text-mg" variant="secondary" href="/bidrag"
+          >Del dit bidrag</Link>
+      </li>
+    </ul>
   </nav>
 </div>

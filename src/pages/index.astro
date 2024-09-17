@@ -1,25 +1,82 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-import Button from '../components/Button.astro';
-import Link from '../components/Link.astro';
-import Vidstedu from '../components/vidsteducard.astro';
-
-
+import Button from "../components/Button.astro";
+import Link from "../components/Link.astro";
 ---
+
 <MainLayout title="Digital skraldedag">
-	<h1 class="text-3xl font-bold underline">hej</h1>
+  <h1 class="text-3xl font-bold underline">hej</h1>
 
 
 
 
+  <!-- Vidste du -->
+  <section class="p-6">
+    <h3 class="mx-28 pb-12 h2">Vidste du at</h3>
+    <div
+      class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-20 max-w-screen-lg mx-auto"
+    >
+      <!-- card 1 -->
 
-	<!-- Vidste du -->
-	 <section class="grid lg:grid-cols-2">
-		<div class="flex">
-			<img src="" alt="">
-			<p>På blot ét år (2007) blev der skabt en zettabyte data på verdensplan. I 2010 var dette tal fordoblet. I 2035 vil vi skabe mere end 2.000 zettabytes.</p>
-		</div>
-		
+      <div
+        class="flex flex-col items-center justify-center gap-6 border border-black p-4"
+      >
+        <img
+          class="w-[300px] h-[250px] object-fit"
+          src="/public/vidsteduat/kurve.svg"
+          alt=""
+        />
+        <p class="max-w-sm">
+          På blot ét år (2007) blev der skabt en zettabyte data på verdensplan.
+          I 2010 var dette tal fordoblet. I 2035 vil vi skabe mere end 2.000
+          zettabytes.
+        </p>
+      </div>
 
-</section>
+      <!-- card 2 -->
+      <div
+        class="flex flex-col items-center justify-center gap-6 border border-black p-4"
+      >
+        <img
+          class="w-[250px] h-[250px]  object-fit"
+          src="/public/vidsteduat/procent.svg"
+          alt=""
+        />
+        <p class="max-w-sm">
+          99% af data er blevet skabt inden for de sidste 10 år. Og 90% af al
+          data bliver aldrig tilgået 3 måneder efter, at det er lagret.
+        </p>
+      </div>
+
+      <!-- card 3 -->
+      <div
+        class="flex flex-col items-center justify-center gap-6 border border-black p-4"
+      >
+        <img
+          class="w-[250px] h-[250px] object-fit"
+          src="/public/vidsteduat/co2.svg"
+          alt=""
+        />
+        <p class="max-w-sm">
+          Internettet producerer mere end 900 millioner tons CO2 hvert år!
+        </p>
+      </div>
+
+      <!-- card 4 -->
+      <div
+        class="flex flex-col items-center justify-center gap-6 border border-black p-4"
+      >
+        <img
+          class="w-[250px] h-[250px]  object-fit"
+          src="/public/vidsteduat/2ton.svg"
+          alt=""
+        />
+        <p class="max-w-sm">
+          I 2022 blev omkring 70 millioner servere brugt til at lagre data. Hver
+          forårsagede produktionen af 1–2 tons CO2. Det år blev omkring 20
+          millioner af dem til e-affald.
+        </p>
+      </div>
+    </div>
+  </section>
 </MainLayout>

@@ -10,8 +10,8 @@ import Banner from '../components/Banner.astro';
    <img src="/public/indexhero/heroimage.webp" alt="">
 
 
-  <!-- baner -->
-  <Banner></Banner>
+  <!-- Første banner -->
+	<Banner text="Sæt kryds i kalenderen d. 15.09.25"/>
 
   <!-- Hvad er digital skrald? -->
    <section class="p-6">
@@ -66,14 +66,18 @@ import Banner from '../components/Banner.astro';
 	  </div>
 	</section>
 
-	
-  <!-- baner? -->
-  <Banner></Banner>
+   <!-- Andet banner (indsæt tag til at dele URL) -->
+	<a class="no-underline" href="#">
+		<Banner text="Inviter en ven her"/>
+	</a>
 
   <!-- Problemer med dit digitale skrald -->
    <img src="/public/indexhero/heroimage.webp" alt="">
 
-  <!-- baner? -->
+	<!-- tredje banner ()-->
+	 <a class="no-underline" href="/bidrag">
+		<Banner text="registrer dit bidrag her"/>
+	 </a>
 
   <!-- Vidste du -->
   <section class="p-6">

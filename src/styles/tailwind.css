@@ -59,4 +59,11 @@
   .background-color-footer {
     background-color: #364c28;
   }
+  @media (max-width: 768px) {
+    p {
+      color: #1e1c1c;
+      font-size: 14px;
+      font-family: Helvetica, Arial, sans-serif;
+    }
+  }
 }

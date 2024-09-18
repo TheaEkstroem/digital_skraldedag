@@ -60,3 +60,11 @@
     background-color: #364c28;
   }
 }
+
+body {
+  cursor: url('/public/digitaloprydning/mouse.png'), auto;
+}
+
+a, button, .clickable {
+  cursor: url('/public/digitaloprydning/finger.png'), pointer; /* Specifik markør for klikbare elementer */
+}

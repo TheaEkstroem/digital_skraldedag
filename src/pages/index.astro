@@ -7,9 +7,25 @@ import Banner from '../components/Banner.astro';
 
 <MainLayout title="Digital skraldedag">
   <!-- hero -->
-   <img src="/public/indexhero/heroimage.webp" alt="">
+  <div class="relative mt-32 w-full h-auto min-h-[300px] md:min-h-[500px]">
+    <img src="/public/indexhero/heroimage.webp" alt="pixel billede" class="w-full h-auto min-h-[300px] md:min-h-[500px] object-cover">
+    <div class="absolute inset-0 flex flex-col   p-4">
+      <h4 class="text-[#f8f5ee] text-lg md:text-2xl">Gør dig klar til</h4>
+      <img class="w-50 md:w-100" src="/public/indexhero/digital.svg" alt="digital" >
+      <img class="w-50 md:w-100" src="/public/indexhero/skraldedag.svg" alt="digital" >
+      <h4 class="text-[#f8f5ee] text-lg md:text-2xl">Tid til at rydde op - byte for byte!</h4>
+    </div>
+  </div>
+<!-- 
+   <img src="/public/indexhero/heroimage.webp" alt="pixel billede">
+   <div>
+    <h4 class="text-[#f8f5ee]">Gør dig klar til</h4>
+<img src="/public/indexhero/digital.svg" alt="digital">
+<img src="/public/indexhero/skraldedag.svg" alt="digital">
+<h4 class="text-[#f8f5ee]">Tid til at rydde op - byte for byte!</h4>
+</div>
 
-
+ -->
   <!-- baner -->
   <Banner></Banner>
 

@@ -20,7 +20,7 @@
   }
   h3 {
     color: #1e1c1c;
-    font-size: 45px;
+    font-size: 40px;
     font-family: "Roboto Mono", monospace;
     font-optical-sizing: auto;
     font-weight: normal;
@@ -59,11 +59,28 @@
   .background-color-footer {
     background-color: #364c28;
   }
+
+
   @media (max-width: 768px) {
     p {
       color: #1e1c1c;
       font-size: 14px;
       font-family: Helvetica, Arial, sans-serif;
     }
+    h2 {
+      color: #1e1c1c;
+      font-size: 30px;
+      font-family: "Roboto Mono", monospace;
+    }
+    h3 {
+      color: #1e1c1c;
+      font-size: 25px;
+      font-family: "Roboto Mono", monospace;
   }
+  h4 {
+    color: #1e1c1c;
+    font-size: 20px;
+    font-family: "Roboto Mono", monospace;
 }
+}
+  }

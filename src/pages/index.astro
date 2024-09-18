@@ -3,13 +3,145 @@ import MainLayout from "../layouts/MainLayout.astro";
 import Button from '../components/Button.astro';
 import Link from '../components/Link.astro';
 import Banner from '../components/Banner.astro';
-
 ---
+
 <MainLayout title="Digital skraldedag">
-	<h1 class="text-3xl font-bold underline">hej</h1>
+  <!-- hero -->
+   <img src="/public/indexhero/heroimage.webp" alt="">
 
 
-<Banner></Banner>
+  <!-- baner -->
+  <Banner></Banner>
+
+  <!-- Hvad er digital skrald? -->
+   <section class="p-6">
+    <h3 class="mx-28 pb-12 h2">Hvad er digital skrald?</h3>
+    <div
+      class="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-20 max-w-screen-xl mx-auto"
+    >
+      <!-- forældede filer  -->
+      <div
+        class="flex flex-col  gap-6 border border-black p-4"
+      >
+        <img
+          class="w-[250px] h-[250px] object-fit items-center justify-center"
+          src="/public/hvader/old-file.svg"
+          alt="gammel fil"
+        />
+		<h4 class="">Forældede filer</h4>
+        <p class="max-w-sm">
+			Forældede filer er dokumenter, billeder, programmer eller data, der ikke længere er relevante eller nødvendige for dig. Det kan f.eks. være gamle projekter og præsentationer fra tidligere skole- eller arbejdsopgaver.
+        </p>
+      </div>
+
+	  <!-- Unødvendige e-mails  -->
+      <div
+        class="flex flex-col gap-6 border border-black p-4"
+      >
+        <img
+          class="w-[250px] h-[250px] object-fit items-center justify-center"
+          src="/public/hvader/shredded-mail.svg"
+          alt="Ødelagt Mail"
+        />
+		<h4 class="">Unødvendige <br> 
+			e-mails</h4>
+        <p class="max-w-sm">
+			Når det kommer til at rydde op i din e-mailindbakke, er det vigtigt at fjerne unødvendige beskeder. Det er en god idé at slette, og afmelde dig fra nyhedsbreve, som du ikke benytter. Andre reklamer i spam, er også skrald i din indbakke, især dem med vedhæftede filer.        </p>
+      </div>
+
+ <!-- Ubenyttede applikationer -->
+ <div
+ class="flex flex-col gap-6 border border-black p-4"
+>
+ <img
+   class="w-[250px] h-[250px] object-fit items-center justify-center"
+   src="/public/hvader/mobil.svg"
+   alt="Smartphone"
+ />
+ <h4 class="">Ubenyttede applikationer</h4>
+ <p class="max-w-sm"> Mange installerer apps, der kun bruges en kort periode, som fx spil, rejseapps eller fitnessapps er digital skrald hvis du ikke får dem brugt. Det kan også være downloadede videoer og sange du  har set eller hørt. Hvis du ikke skal bruge dem igen, er det mest bæredygtigt at afinstallere dine downloads. </p>
+
+ </div>
+
+	  </div>
+	</section>
 
 	
+  <!-- baner? -->
+  <Banner></Banner>
+
+  <!-- Problemer med dit digitale skrald -->
+   <img src="/public/indexhero/heroimage.webp" alt="">
+
+  <!-- baner? -->
+
+  <!-- Vidste du -->
+  <section class="p-6">
+    <h3 class="mx-28 pb-12">Vidste du at</h3>
+    <div
+      class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-20 max-w-screen-lg mx-auto"
+    >
+      <!-- card 1 -->
+
+      <div
+        class="flex flex-col items-center justify-center gap-6 border border-black p-4"
+      >
+        <img
+          class="w-[300px] h-[250px] object-fit"
+          src="/public/vidsteduat/kurve.svg"
+          alt=""
+        />
+        <p class="max-w-sm">
+          På blot ét år (2007) blev der skabt en zettabyte data på verdensplan.
+          I 2010 var dette tal fordoblet. I 2035 vil vi skabe mere end 2.000
+          zettabytes.
+        </p>
+      </div>
+
+      <!-- card 2 -->
+      <div
+        class="flex flex-col items-center justify-center gap-6 border border-black p-4"
+      >
+        <img
+          class="w-[250px] h-[250px] object-fit"
+          src="/public/vidsteduat/procent.svg"
+          alt=""
+        />
+        <p class="max-w-sm">
+          99% af data er blevet skabt inden for de sidste 10 år. Og 90% af al
+          data bliver aldrig tilgået 3 måneder efter, at det er lagret.
+        </p>
+      </div>
+
+      <!-- card 3 -->
+      <div
+        class="flex flex-col items-center justify-center gap-6 border border-black p-4"
+      >
+        <img
+          class="w-[250px] h-[250px] object-fit"
+          src="/public/vidsteduat/co2.svg"
+          alt=""
+        />
+        <p class="max-w-sm">
+          Internettet producerer mere end 900 millioner tons CO2 hvert år!
+        </p>
+      </div>
+
+      <!-- card 4 -->
+      <div
+        class="flex flex-col items-center justify-center gap-6 border border-black p-4"
+      >
+        <img
+          class="w-[250px] h-[250px] object-fit"
+          src="/public/vidsteduat/2ton.svg"
+          alt=""
+        />
+        <p class="max-w-sm">
+          I 2022 blev omkring 70 millioner servere brugt til at lagre data. Hver
+          forårsagede produktionen af 1–2 tons CO2. Det år blev omkring 20
+          millioner af dem til e-affald.
+        </p>
+      </div>
+    </div>
+  </section>
 </MainLayout>

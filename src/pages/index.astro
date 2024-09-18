@@ -1,16 +1,20 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-import Button from "../components/Button.astro";
-import Link from "../components/Link.astro";
+import Button from '../components/Button.astro';
+import Link from '../components/Link.astro';
+import Banner from '../components/Banner.astro';
 ---
 
 <MainLayout title="Digital skraldedag">
   <!-- hero -->
+   <img src="/public/indexhero/heroimage.webp" alt="">
 
-  <!-- baner? -->
+
+  <!-- Første banner -->
+	<Banner text="Sæt kryds i kalenderen d. 15.09.25"/>
 
   <!-- Hvad er digital skrald? -->
-   <section>
+   <section class="p-6">
     <h3 class="mx-28 pb-12 h2">Hvad er digital skrald?</h3>
     <div
       class="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-20 max-w-screen-xl mx-auto"
@@ -21,8 +25,8 @@ import Link from "../components/Link.astro";
       >
         <img
           class="w-[250px] h-[250px] object-fit items-center justify-center"
-          src=""
-          alt="Billede mangler"
+          src="/public/hvader/old-file.svg"
+          alt="gammel fil"
         />
 		<h4 class="">Forældede filer</h4>
         <p class="max-w-sm">
@@ -36,8 +40,8 @@ import Link from "../components/Link.astro";
       >
         <img
           class="w-[250px] h-[250px] object-fit items-center justify-center"
-          src=""
-          alt="Billede mangler"
+          src="/public/hvader/shredded-mail.svg"
+          alt="Ødelagt Mail"
         />
 		<h4 class="">Unødvendige <br> 
 			e-mails</h4>
@@ -51,8 +55,8 @@ import Link from "../components/Link.astro";
 >
  <img
    class="w-[250px] h-[250px] object-fit items-center justify-center"
-   src=""
-   alt="Billede mangler"
+   src="/public/hvader/mobil.svg"
+   alt="Smartphone"
  />
  <h4 class="">Ubenyttede applikationer</h4>
  <p class="max-w-sm"> Mange installerer apps, der kun bruges en kort periode, som fx spil, rejseapps eller fitnessapps er digital skrald hvis du ikke får dem brugt. Det kan også være downloadede videoer og sange du  har set eller hørt. Hvis du ikke skal bruge dem igen, er det mest bæredygtigt at afinstallere dine downloads. </p>
@@ -62,12 +66,18 @@ import Link from "../components/Link.astro";
 	  </div>
 	</section>
 
-	
-  <!-- baner? -->
+   <!-- Andet banner (indsæt tag til at dele URL) -->
+	<a class="no-underline" href="#">
+		<Banner text="Inviter en ven her"/>
+	</a>
 
   <!-- Problemer med dit digitale skrald -->
+   <img src="/public/indexhero/heroimage.webp" alt="">
 
-  <!-- baner? -->
+	<!-- tredje banner ()-->
+	 <a class="no-underline" href="/bidrag">
+		<Banner text="registrer dit bidrag her"/>
+	 </a>
 
   <!-- Vidste du -->
   <section class="p-6">

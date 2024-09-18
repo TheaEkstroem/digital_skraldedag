@@ -37,9 +37,7 @@ import Banner from "../components/Banner.astro";
   <!-- Hvad er digital skrald? -->
   <section class="p-6 pb-16 m-6">
     <h2 class="lg:mx-20 pb-12">Hvad er digital skrald?</h2>
-    <div
-      class="grid lg:grid-cols-3 gap-8 lg:gap-20 max-w-screen-xl mx-auto"
-    >
+    <div class="grid lg:grid-cols-3 gap-8 lg:gap-20 max-w-screen-xl mx-auto">
       <!-- forældede filer  -->
 
       <div class="flex flex-col space-y-9 border border-black p-8 items-center">
@@ -107,15 +105,32 @@ import Banner from "../components/Banner.astro";
   </a>
 
   <!-- Problemer med dit digitale skrald -->
-  <div class="w-full h-auto min-h-[300px] md:min-h-[500px]">
-    <img class="" src="/public/indexhero/heroimage.webp" alt="pixel billede" />
-    <!-- indhild -->
+  <div class="relative w-full h-auto min-h-[300px] md:min-h-[500px]">
+    <img
+      src="/public/indexhero/heroimage.webp"
+      alt="pixel billede"
+      class="w-full h-auto min-h-[880px] sm:min-h-[500px] object-cover"
+    />
+    <!-- indhold -->
+    <div class="absolute inset-0 flex justify-center items-center">
+    <img
+    class="max-sm:rotate-90  max-sm:h-[350px] min-w-[890px]   md:min-h-[500px] object-cover"
+    src="/public/problemermedskrald/skt.svg"
+    alt="c02"
+  />
+</div>
 
-    <div class="grid md:grid-cols-5 items-center justify-center">
+    <h3 class="absolute inset-1 md:p-24 text-center">
+      Problemer med dit digitale skrald
+    </h3>
+
+    <div
+      class="absolute inset-1 p-12 grid grid-cols-2 md:grid-cols-5 items-center justify-center"
+    >
       <!-- co2 -->
       <div class="flex flex-col items-center justify-center gap-6 p-4">
         <img
-          class="w-[100px] h-[100px] md:w-[120px] md:h-[120px] object-fit"
+          class="w-[80px] h-[80px] md:w-[100px] md:h-[100px] object-fit"
           src="/public/problemermedskrald/co2.svg"
           alt="c02"
         />
@@ -127,7 +142,7 @@ import Banner from "../components/Banner.astro";
       <!-- telefon -->
       <div class="flex flex-col items-center justify-center gap-6 p-4">
         <img
-          class="w-[100px] h-[100px] md:w-[120px] md:h-[120px] object-fit"
+          class="w-[80px] h-[80px] md:w-[100px] md:h-[100px]object-fit"
           src="/public/problemermedskrald/mobile-frame.svg"
           alt="c02"
         />
@@ -139,7 +154,7 @@ import Banner from "../components/Banner.astro";
       <!-- mappe -->
       <div class="flex flex-col items-center justify-center gap-6 p-4">
         <img
-          class="w-[100px] h-[100px] md:w-[120px] md:h-[120px] object-fit"
+          class="w-[80px] h-[80px] md:w-[100px] md:h-[100px] object-fit"
           src="/public/problemermedskrald/fast-file.svg"
           alt="c02"
         />
@@ -152,7 +167,7 @@ import Banner from "../components/Banner.astro";
       <!-- nøgle -->
       <div class="flex flex-col items-center justify-center gap-6 p-4">
         <img
-          class="w-[100px] h-[100px] md:w-[120px] md:h-[120px] object-fit"
+          class="w-[80px] h-[80px] md:w-[100px] md:h-[100px] object-fit"
           src="/public/problemermedskrald/lock.svg"
           alt="c02"
         />
@@ -164,7 +179,7 @@ import Banner from "../components/Banner.astro";
       <!-- floppy-disk -->
       <div class="flex flex-col items-center justify-center gap-6 p-4">
         <img
-          class="w-[100px] h-[100px] md:w-[120px] md:h-[120px] object-fit"
+          class="w-[80px] h-[80px] md:w-[100px] md:h-[100px] object-fit"
           src="/public/problemermedskrald/floppy-disk.svg"
           alt="c02"
         />
@@ -181,7 +196,7 @@ import Banner from "../components/Banner.astro";
   </a>
 
   <!-- Vidste du -->
-  <section class="p-6 pb-16 ">
+  <section class="p-6 pb-16">
     <h2 class="lg:mx-20 pb-12">Vidste du at</h2>
     <div
       class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-20 max-w-screen-lg mx-auto"

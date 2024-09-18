@@ -1,0 +1,61 @@
+---
+// Banner.astro
+const { text = "sæt kryds i kalenderen" } = Astro.props;
+---
+<div class="border-t-2 border-b-2 border-black py-2 overflow-hidden uppercase">
+  <div class="scrolling-text whitespace-nowrap">
+    <span class="px-4">
+      {text}
+    </span>
+    <span class="px-4">
+      {text}
+    </span>
+    <span class="px-4">
+      {text}
+    </span>
+    <span class="px-4">
+      {text}
+    </span>
+    <span class="px-4">
+      {text}
+    </span>
+    <span class="px-4">
+      {text}
+    </span>
+    <span class="px-4">
+      {text}
+    </span>
+    <span class="px-4">
+      {text}
+    </span>
+    <span class="px-4">
+      {text}
+    </span>
+    <span class="px-4">
+      {text}
+    </span>
+    <span class="px-4">
+      {text}
+    </span>
+    <span class="px-4">
+      {text}
+    </span>
+  </div>
+</div>
+
+<style>
+    @keyframes scroll {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+  
+    .scrolling-text {
+      display: flex;
+      align-items: center;
+      animation: scroll 30s linear infinite;
+    }
+  </style>

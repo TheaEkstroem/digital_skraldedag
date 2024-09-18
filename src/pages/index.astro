@@ -1,94 +1,181 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-import Button from '../components/Button.astro';
-import Link from '../components/Link.astro';
-import Banner from '../components/Banner.astro';
+import Button from "../components/Button.astro";
+import Link from "../components/Link.astro";
+import Banner from "../components/Banner.astro";
 ---
 
 <MainLayout title="Digital skraldedag">
   <!-- hero -->
   <div class="relative mt-32 w-full h-auto min-h-[300px] md:min-h-[500px]">
-    <img src="/public/indexhero/heroimage.webp" alt="pixel billede" class="w-full h-auto min-h-[300px] md:min-h-[500px] object-cover">
-    <div class="absolute inset-0 flex flex-col   p-4">
+    <img
+      src="/public/indexhero/heroimage.webp"
+      alt="pixel billede"
+      class="w-full h-auto min-h-[300px] md:min-h-[500px] object-cover"
+    />
+    <div class="absolute inset-0 flex flex-col justify-center p-6 space-y-6">
       <h4 class="text-[#f8f5ee] text-lg md:text-2xl">Gør dig klar til</h4>
-      <img class="w-50 md:w-100" src="/public/indexhero/digital.svg" alt="digital" >
-      <img class="w-50 md:w-100" src="/public/indexhero/skraldedag.svg" alt="digital" >
-      <h4 class="text-[#f8f5ee] text-lg md:text-2xl">Tid til at rydde op - byte for byte!</h4>
+      <img
+        class="w-50 md:w-[500px]"
+        src="/public/indexhero/digital.svg"
+        alt="digital"
+      />
+      <img
+        class="w-50 md:w-[700px]"
+        src="/public/indexhero/skraldedag.svg"
+        alt="digital"
+      />
+      <h4 class="text-[#f8f5ee] text-lg md:text-2xl">
+        Tid til at rydde op - byte for byte!
+      </h4>
     </div>
   </div>
 
-
-
-<!--    Første banner
- -->	
-<Banner text="Sæt kryds i kalenderen d. 15.09.25"/>
-
+  <!--    Første banner -->
+  <Banner text="Sæt kryds i kalenderen d. 15.09.25" />
 
   <!-- Hvad er digital skrald? -->
-   <section class="p-6">
+  <section class="p-6">
     <h3 class="mx-28 pb-12 h2">Hvad er digital skrald?</h3>
     <div
       class="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-20 max-w-screen-xl mx-auto"
     >
       <!-- forældede filer  -->
-      <div
-        class="flex flex-col  gap-6 border border-black p-4"
-      >
+      <div class="flex flex-col gap-6 border border-black p-4">
         <img
-          class="w-[250px] h-[250px] object-fit items-center justify-center"
+          class="w-[150px] h-[150px] object-fit items-center justify-center"
           src="/public/hvader/old-file.svg"
           alt="gammel fil"
         />
-		<h4 class="">Forældede filer</h4>
+        <h4 class="">Forældede filer</h4>
         <p class="max-w-sm">
-			Forældede filer er dokumenter, billeder, programmer eller data, der ikke længere er relevante eller nødvendige for dig. Det kan f.eks. være gamle projekter og præsentationer fra tidligere skole- eller arbejdsopgaver.
+          Forældede filer er dokumenter, billeder, programmer eller data, der
+          ikke længere er relevante eller nødvendige for dig. Det kan f.eks.
+          være gamle projekter og præsentationer fra tidligere skole- eller
+          arbejdsopgaver.
         </p>
       </div>
 
-	  <!-- Unødvendige e-mails  -->
-      <div
-        class="flex flex-col gap-6 border border-black p-4"
-      >
+      <!-- Unødvendige e-mails  -->
+      <div class="flex flex-col gap-6 border border-black p-4">
         <img
-          class="w-[250px] h-[250px] object-fit items-center justify-center"
+          class="w-[150px] h-[150px] object-fit items-center justify-center"
           src="/public/hvader/shredded-mail.svg"
           alt="Ødelagt Mail"
         />
-		<h4 class="">Unødvendige <br> 
-			e-mails</h4>
+        <h4 class="">
+          Unødvendige <br />
+          e-mails
+        </h4>
         <p class="max-w-sm">
-			Når det kommer til at rydde op i din e-mailindbakke, er det vigtigt at fjerne unødvendige beskeder. Det er en god idé at slette, og afmelde dig fra nyhedsbreve, som du ikke benytter. Andre reklamer i spam, er også skrald i din indbakke, især dem med vedhæftede filer.        </p>
+          Når det kommer til at rydde op i din e-mailindbakke, er det vigtigt at
+          fjerne unødvendige beskeder. Det er en god idé at slette, og afmelde
+          dig fra nyhedsbreve, som du ikke benytter. Andre reklamer i spam, er
+          også skrald i din indbakke, især dem med vedhæftede filer.
+        </p>
       </div>
 
- <!-- Ubenyttede applikationer -->
- <div
- class="flex flex-col gap-6 border border-black p-4"
->
- <img
-   class="w-[250px] h-[250px] object-fit items-center justify-center"
-   src="/public/hvader/mobil.svg"
-   alt="Smartphone"
- />
- <h4 class="">Ubenyttede applikationer</h4>
- <p class="max-w-sm"> Mange installerer apps, der kun bruges en kort periode, som fx spil, rejseapps eller fitnessapps er digital skrald hvis du ikke får dem brugt. Det kan også være downloadede videoer og sange du  har set eller hørt. Hvis du ikke skal bruge dem igen, er det mest bæredygtigt at afinstallere dine downloads. </p>
+      <!-- Ubenyttede applikationer -->
+      <div class="flex flex-col gap-6 border border-black p-4">
+        <img
+          class="w-[150px] h-[150px] object-fit items-center justify-center"
+          src="/public/hvader/mobil.svg"
+          alt="Smartphone"
+        />
+        <h4 class="">Ubenyttede applikationer</h4>
+        <p class="max-w-sm">
+          Mange installerer apps, der kun bruges en kort periode, som fx spil,
+          rejseapps eller fitnessapps er digital skrald hvis du ikke får dem
+          brugt. Det kan også være downloadede videoer og sange du har set eller
+          hørt. Hvis du ikke skal bruge dem igen, er det mest bæredygtigt at
+          afinstallere dine downloads.
+        </p>
+      </div>
+    </div>
+  </section>
 
- </div>
+  <!-- Andet banner (indsæt tag til at dele URL) -->
+  <a class="no-underline" href="#">
+    <Banner text="Inviter en ven her" />
+  </a>
 
-	  </div>
-	</section>
-
-   <!-- Andet banner (indsæt tag til at dele URL) -->
-	<a class="no-underline" href="#">
-		<Banner text="Inviter en ven her"/>
-	</a>
 
   <!-- Problemer med dit digitale skrald -->
-   <img src="/public/indexhero/heroimage.webp" alt="">
+<div class="  w-full h-auto min-h-[300px] md:min-h-[500px]">
+  <img class="" src="/public/indexhero/heroimage.webp" alt="pixel billede" />
+  <!-- indhild -->
+  
+  <div class="grid md:grid-cols-5 items-center justify-center">
+    <!-- co2 -->
+    <div class="flex flex-col items-center justify-center gap-6 p-4">
+      <img
+        class="w-[100px] h-[100px] md:w-[120px] md:h-[120px] object-fit"
+        src="/public/problemermedskrald/co2.svg"
+        alt="c02"
+      />
+      <p class="text-center">
+        Energien, der bruges i datacentre, bidrager til øget CO2-udledning.
+      </p>
+    </div>
 
-	<!-- tredje banner ()-->
-	 <a class="no-underline" href="/bidrag">
-		<Banner text="registrer dit bidrag her"/>
-	 </a>
+    <!-- telefon -->
+    <div class="flex flex-col items-center justify-center gap-6 p-4">
+      <img
+        class="w-[100px] h-[100px] md:w-[120px] md:h-[120px] object-fit"
+        src="/public/problemermedskrald/mobile-frame.svg"
+        alt="c02"
+      />
+      <p class="text-center">
+        Digitalt skrald er med til at forkorte levetiden for dine enheder.
+      </p>
+    </div>
+
+    <!-- mappe -->
+    <div class="flex flex-col items-center justify-center gap-6 p-4">
+      <img
+        class="w-[100px] h-[100px] md:w-[120px] md:h-[120px] object-fit"
+        src="/public/problemermedskrald/fast-file.svg"
+        alt="c02"
+      />
+      <p class="text-center">
+        Det gør at filer og informationer bliver langsommere at finde eller
+        dele.
+      </p>
+    </div>
+
+    <!-- nøgle -->
+    <div class="flex flex-col items-center justify-center gap-6 p-4">
+      <img
+        class="w-[100px] h-[100px] md:w-[120px] md:h-[120px] object-fit"
+        src="/public/problemermedskrald/lock.svg"
+        alt="c02"
+      />
+      <p class="text-center">Det forhøjer sikkerhedsrisici ved datalagring.</p>
+    </div>
+
+    <!-- floppy-disk -->
+    <div class="flex flex-col items-center justify-center gap-6 p-4">
+      <img
+        class="w-[100px] h-[100px] md:w-[120px] md:h-[120px] object-fit"
+        src="/public/problemermedskrald/floppy-disk.svg"
+        alt="c02"
+      />
+      <p class="text-center">
+        Det reducerer disk & server kapacitets-omkostninger.
+      </p>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+  <!-- tredje banner ()-->
+  <a class="no-underline" href="/bidrag">
+    <Banner text="registrer dit bidrag her" />
+  </a>
 
   <!-- Vidste du -->
   <section class="p-6">

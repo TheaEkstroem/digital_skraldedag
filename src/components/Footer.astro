@@ -1,62 +1,70 @@
 ---
+import Link from "../components/Link.astro";
 ---
+
 <div class="py-10">
-<div class="pb-15 p-10">
-    <h3>
-        Digital skraldedag
-    </h3>
-    <h4>
-        d. 15.09.25
-    </h4>
-</div>
-<br>
+  <div class="pb-15 p-10">
+    <h3>Digital skraldedag</h3>
+    <h4>d. 15.09.25</h4>
+  </div>
+  <br />
 
-<div class="grid md:grid-cols-3 p-10 gap-9">
+  <div class="grid md:grid-cols-3 p-10 gap-9">
     <div class="md:justify-self-start">
-        <h5>
-            Let's Do It World NGO
-        </h5>
-        <p>Roosikrantshi 3, TALLINN 10110, Estonia <br>Reg. code - 80562203</p>
-        <a href="mailto:digital@ldiw.com">digital@ldiw.com</a>
+      <h5>Let's Do It World NGO</h5>
+      <p>Roosikrantshi 3, TALLINN 10110, Estonia <br />Reg. code - 80562203</p>
+      <a href="mailto:digital@ldiw.com">digital@ldiw.com</a>
     </div>
     <div class="md:justify-self-center">
-        <h5>
-            Om os
-        </h5>
-        <a href="#">Blog</a> <br>
-        <a href="#">Marketing Materials</a> <br>
-        <a href="#">Consititution</a> <br>
-        <a href="#">Join the movement</a> <br>
+      <h5>Om os</h5>
+
+      <Link size="text-mg" variant="footer" href="/hvordan">Blog</Link>
+
+      <br />
+      <Link size="text-mg" variant="footer" href="/hvordan"
+        >Marketing Materials</Link
+      >
+
+      <br />
+      <Link size="text-mg" variant="footer" href="/hvordan">Consititution</Link>
+
+      <br />
+      <Link size="text-mg" variant="footer" href="/hvordan"
+        >Join the movement</Link
+      >
+
+      <br />
     </div>
     <div class="md:justify-self-center">
-        <h5>
-            Find os på
-        </h5>
-        <a href="#">X</a> <br>
-        <a href="#">LinkedIn</a> <br>
-        <a href="#">Instagram</a> <br>
-        <a href="#">Facebook</a> <br>
-        <a href="#">Tiktok</a> <br>
+      <h5>Find os på</h5>
+      <Link size="text-mg" variant="footer" href="/hvordan">X</Link>
+      <br />
+      <Link size="text-mg" variant="footer" href="/hvordan">LinkedIn</Link>
+      <br />
+      <Link size="text-mg" variant="footer" href="/hvordan">Instagram</Link>
+      <br />
+      <Link size="text-mg" variant="footer" href="/hvordan">Facebook</Link>
+      <br />
+      <Link size="text-mg" variant="footer" href="/hvordan">Tiktok</Link>
+      <br />
     </div>
-</div>
-
-
+  </div>
 </div>
 
 <style>
-    h3{
-        color: #f8f5ee;;
-    }
-    h4{
-        color: #f8f5ee;;
-    }
-    h5{
-        color: #f8f5ee;;
-    }
-    p{
-        color: #f8f5ee;;
-    }
-    a{
-        color: #f8f5ee;;
-    }
+  h3 {
+    color: #f8f5ee;
+  }
+  h4 {
+    color: #f8f5ee;
+  }
+  h5 {
+    color: #f8f5ee;
+  }
+  p {
+    color: #f8f5ee;
+  }
+  a {
+    color: #f8f5ee;
+  }
 </style>

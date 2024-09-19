@@ -7,7 +7,7 @@ import Link from "../components/Link.astro";
  <div class="mt-[100px] px-10">
 <div
   x-data="{ showmenu: false }"
-  class="px-10 py-4 fixed top-0 left-0 z-50 w-full bg-[#F8F5EE] "
+  class="px-10 py-2 fixed top-0 left-0 z-50 w-full bg-[#F8F5EE] border-black border-b-2"
 >
   <!-- Desktop -->
   <div id="navbar" class="flex flex-row justify-between">
@@ -25,7 +25,7 @@ import Link from "../components/Link.astro";
     <!-- nav -->
     <nav
       id="desktopmenu"
-      class="hidden md:flex md:flex-row md:items-center gap-10"
+      class="hidden md:flex md:flex-row md:items-center gap-20"
     >
       <ul class="flex flex-row gap-10">
         <li>
@@ -38,7 +38,7 @@ import Link from "../components/Link.astro";
         >Del dit bidrag</Link
       >
       <!-- dark mode knap -->
-      <button class="grid bg-[#1E1C1C] p-1 w-20 rounded-full">
+      <button class="grid bg-[#1E1C1C] p-1 w-16 rounded-full">
         <div class="bg-white rounded-full block w-min p-1 ml-auto">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -76,7 +76,7 @@ import Link from "../components/Link.astro";
     x-on:click="showmenu = false"
     x-on:click.outside="showmenu = false"
   >
-    <ul class="text-right">
+    <ul class="text-right no-underline">
       <li class="pb-3">
         <Link size="text-mg" variant="secondary" href="/hvordan"
           >Hvordan deltager man</Link>

@@ -37,7 +37,7 @@ import Banner from "../components/Banner.astro";
 
   <!-- Hvad er digital skrald? -->
   <section class="p-6 pb-16 m-6">
-    <h2 class="lg:mx-20 pb-10">Hvad er digital skrald?</h2>
+    <h2 class="lg:mx-16 pb-10">Hvad er digital skrald?</h2>
     <div class="grid lg:grid-cols-3 gap-8 lg:gap-20 max-w-screen-xl mx-auto">
       <!-- forældede filer  -->
       <div class="flex flex-col space-y-9 border-2 border-black p-6 items-center">
@@ -113,17 +113,17 @@ import Banner from "../components/Banner.astro";
       class="w-full h-auto min-h-[900px] sm:min-h-[500px] object-cover"
     />
     <!-- indhold -->
-    <div class="absolute inset-0 flex justify-center items-center">
+    <div class="absolute inset-1 flex justify-center items-center">
 
-      <!-- Billede som vises på desktop skærme -->
+      <!-- Billede som vises på desktop skærme  min-w-[800px] lg:min-h-[200px] -->
 <img
-class="hidden md:block min-w-[890px] lg:min-h-[500px] object-cover"
-src="/public/problemermedskrald/skt.svg"
+class="hidden md:block object-fit"
+src="/public/problemermedskrald/sky.svg"
 alt="c02"
 />
 
 <!-- Boks med baggrundsfarve som vises på mobil-view -->
-<div class="block md:hidden bg-[#F8F5EE] min-h-[850px] w-[390px]">
+<div class="block md:hidden bg-[#F8F5EE] min-h-[850px] w-[390px] border-2 border-black">
 </div>
    
 </div>
@@ -205,14 +205,14 @@ alt="c02"
 
   <!-- Vidste du -->
   <section class="p-6 pb-16">
-    <h2 class="lg:mx-20 pb-12">Vidste du at</h2>
+    <h2 class="lg:mx-16 pb-12">Vidste du at</h2>
     <div
       class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-14 max-w-screen-lg mx-auto"
     >
       <!-- card 1 -->
 
       <div
-        class="flex flex-col items-center justify-center gap-6 border border-black p-4"
+        class="flex flex-col items-center justify-center gap-6 border-2 border-black p-4"
       >
         <img
           class="w-[200px] h-[150px] md:w-[280px] md:h-[230px] object-fit "
@@ -228,7 +228,7 @@ alt="c02"
 
       <!-- card 2 -->
       <div
-        class="flex flex-col items-center justify-center gap-6 border border-black p-4"
+        class="flex flex-col items-center justify-center gap-6 border-2 border-black p-4"
       >
         <img
           class="w-[200px] h-[150px] md:w-[240px] md:h-[240px]object-fit"
@@ -243,7 +243,7 @@ alt="c02"
 
       <!-- card 3 -->
       <div
-        class="flex flex-col items-center justify-center gap-6 border border-black p-4"
+        class="flex flex-col items-center justify-center gap-6 border-2 border-black p-4"
       >
         <img
           class="w-[200px] h-[180px] md:w-[200px] md:h-[250px] object-fit"
@@ -257,7 +257,7 @@ alt="c02"
 
       <!-- card 4 -->
       <div
-        class="flex flex-col items-center justify-center gap-6 border border-black p-4"
+        class="flex flex-col items-center justify-center gap-6 border-2 border-black p-4"
       >
         <img
           class="w-[200px] h-[180px] md:w-[200px] md:h-[250px] object-fit"

@@ -1,46 +1,77 @@
 ---
-const { text = "sæt kryds i kalenderen"} = Astro.props;
+const { text = "banner tekst"} = Astro.props;
 ---
-<div class="border-t-2 border-b-2 border-[#1e1c1c] py-2 overflow-hidden uppercase">
+<div class="border-t-2 border-b-2 border-[#1e1c1c] py-2 overflow-hidden uppercase whitespace-nowrap">
+  <div class="scrolling-text">
+    <span class="px-8">
+      {text}
+    </span>
+    <span class="px-8">
+      {text}
+    </span>
+    <span class="px-8">
+      {text}
+    </span>
+    <span class="px-8">
+      {text}
+    </span>
+    <span class="px-8">
+      {text}
+    </span>
+    <span class="px-8">
+        {text}
+      </span>
+      <span class="px-8">
+        {text}
+      </span>
+      <span class="px-8">
+        {text}
+      </span>
+      <span class="px8">
+        {text}
+      </span>
+      <span class="px-8">
+        {text}
+      </span>
+  </div>
   <div class="scrolling-text whitespace-nowrap">
-    <span class="px-5">
+    <span class="px-8">
       {text}
     </span>
-    <span class="px-5">
+    <span class="px-8">
       {text}
     </span>
-    <span class="px-5">
+    <span class="px-8">
       {text}
     </span>
-    <span class="px-5">
+    <span class="px-8">
       {text}
     </span>
-    <span class="px-5">
+    <span class="px-8">
       {text}
     </span>
-    <span class="px-5">
+    <span class="px-8">
         {text}
       </span>
-      <span class="px-5">
+      <span class="px-8">
         {text}
       </span>
-      <span class="px-5">
+      <span class="px-8">
         {text}
       </span>
-      <span class="px-5">
+      <span class="px-8">
         {text}
       </span>
-      <span class="px-5">
+      <span class="px-8">
         {text}
       </span>
   </div>
 </div>
 
-
 <style>
     @keyframes scroll {
       0% {
-        transform: translateX(100%);
+        transform: translateX(0%);
       }
       100% {
         transform: translateX(-100%);
@@ -48,8 +79,8 @@ const { text = "sæt kryds i kalenderen"} = Astro.props;
     }
   
     .scrolling-text {
-      display: flex;
+      display: inline-block;
       align-items: center;
-      animation: scroll 30s linear infinite;
+      animation: scroll 50s linear infinite;
     }
   </style>

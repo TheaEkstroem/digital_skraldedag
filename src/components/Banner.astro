@@ -34,7 +34,7 @@ const { text = "banner tekst"} = Astro.props;
         {text}
       </span>
   </div>
-  <div class="scrolling-text whitespace-nowrap">
+  <div class="scrolling-text">
     <span class="px-8">
       {text}
     </span>
@@ -81,6 +81,6 @@ const { text = "banner tekst"} = Astro.props;
     .scrolling-text {
       display: inline-block;
       align-items: center;
-      animation: scroll 50s linear infinite;
+      animation: scroll 60s linear infinite;
     }
   </style>

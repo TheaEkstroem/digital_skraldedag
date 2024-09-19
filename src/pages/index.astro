@@ -36,17 +36,16 @@ import Banner from "../components/Banner.astro";
 
   <!-- Hvad er digital skrald? -->
   <section class="p-6 pb-16 m-6">
-    <h2 class="lg:mx-20 pb-12">Hvad er digital skrald?</h2>
+    <h2 class="lg:mx-20 pb-10">Hvad er digital skrald?</h2>
     <div class="grid lg:grid-cols-3 gap-8 lg:gap-20 max-w-screen-xl mx-auto">
       <!-- forældede filer  -->
-
-      <div class="flex flex-col space-y-9 border border-black p-8 items-center">
+      <div class="flex flex-col space-y-9 border border-black p-6 items-center">
         <img
-          class="w-[80px] h-[80px] md:w-[100px] md:h-[100px] object-contain"
+          class="w-[70px] h-[70px] md:w-[90px] md:h-[90px] object-contain"
           src="/public/hvader/old-file.svg"
           alt="gammel fil"
         />
-        <div class="max-w-sm space-y-6">
+        <div class="max-w-sm space-y-10">
           <h4 class="">Forældede filer</h4>
           <p>
             Forældede filer er dokumenter, billeder, programmer eller data, der
@@ -58,9 +57,9 @@ import Banner from "../components/Banner.astro";
       </div>
 
       <!-- Unødvendige e-mails  -->
-      <div class="flex flex-col space-y-6 border border-black p-8 items-center">
+      <div class="flex flex-col space-y-6 border border-black p-6 items-center">
         <img
-          class="w-[80px] h-[80px] md:w-[100px] md:h-[100px] object-contain"
+          class="w-[70px] h-[70px] md:w-[90px] md:h-[90px] object-contain"
           src="/public/hvader/shredded-mail.svg"
           alt="Ødelagt Mail"
         />
@@ -79,9 +78,9 @@ import Banner from "../components/Banner.astro";
       </div>
 
       <!-- Ubenyttede applikationer -->
-      <div class="flex flex-col space-y-6 border border-black p-8 items-center">
+      <div class="flex flex-col space-y-6 border border-black p-6 items-center">
         <img
-          class="w-[80px] h-[80px] md:w-[100px] md:h-[100px] object-contain"
+          class="w-[70px] h-[70px] md:w-[90px] md:h-[90px] object-contain"
           src="/public/hvader/mobil.svg"
           alt="Smartphone"
         />
@@ -104,33 +103,41 @@ import Banner from "../components/Banner.astro";
     <Banner text="Inviter en ven her" />
   </a>
 
+
   <!-- Problemer med dit digitale skrald -->
   <div class="relative w-full h-auto min-h-[300px] md:min-h-[500px]">
     <img
       src="/public/indexhero/heroimage.webp"
       alt="pixel billede"
-      class="w-full h-auto min-h-[880px] sm:min-h-[500px] object-cover"
+      class="w-full h-auto min-h-[900px] sm:min-h-[500px] object-cover"
     />
     <!-- indhold -->
     <div class="absolute inset-0 flex justify-center items-center">
-    <img
-    class="max-sm:rotate-90  max-sm:h-[350px] min-w-[890px]   md:min-h-[500px] object-cover"
-    src="/public/problemermedskrald/skt.svg"
-    alt="c02"
-  />
+
+      <!-- Billede som vises på desktop skærme -->
+<img
+class="hidden md:block min-w-[890px] lg:min-h-[500px] object-cover"
+src="/public/problemermedskrald/skt.svg"
+alt="c02"
+/>
+
+<!-- Boks med baggrundsfarve som vises på mobil-view -->
+<div class="block md:hidden bg-[#F8F5EE] min-h-[850px] w-[390px]">
+</div>
+   
 </div>
 
-    <h3 class="absolute inset-1 md:p-24 text-center">
+    <h3 class="absolute inset-1 md:p-24 p-7 text-center">
       Problemer med dit digitale skrald
     </h3>
 
     <div
-      class="absolute inset-1 p-12 grid grid-cols-2 md:grid-cols-5 items-center justify-center"
+      class="absolute inset-1 p-10 grid grid-cols-2 mt-7 lg:grid-cols-5 items-center justify-center"
     >
       <!-- co2 -->
-      <div class="flex flex-col items-center justify-center gap-6 p-4">
+      <div class="flex flex-col items-center justify-center gap-6 p-4 hover:scale-125 transform transition duration-300 ease-in-out">
         <img
-          class="w-[80px] h-[80px] md:w-[100px] md:h-[100px] object-fit"
+          class="w-[70px] h-[70px] lg:w-[90px] lg:h-[90px] object-fit"
           src="/public/problemermedskrald/co2.svg"
           alt="c02"
         />
@@ -140,9 +147,9 @@ import Banner from "../components/Banner.astro";
       </div>
 
       <!-- telefon -->
-      <div class="flex flex-col items-center justify-center gap-6 p-4">
+      <div class="flex flex-col items-center justify-center gap-6 p-4 hover:scale-125 transform transition duration-300 ease-in-out">
         <img
-          class="w-[80px] h-[80px] md:w-[100px] md:h-[100px]object-fit"
+          class="w-[70px] h-[70px] lg:w-[90px] lg:h-[90px] object-fit"
           src="/public/problemermedskrald/mobile-frame.svg"
           alt="c02"
         />
@@ -152,9 +159,9 @@ import Banner from "../components/Banner.astro";
       </div>
 
       <!-- mappe -->
-      <div class="flex flex-col items-center justify-center gap-6 p-4">
+      <div class="flex flex-col items-center justify-center gap-6 p-4 hover:scale-125 transform transition duration-300 ease-in-out">
         <img
-          class="w-[80px] h-[80px] md:w-[100px] md:h-[100px] object-fit"
+          class="w-[70px] h-[70px] lg:w-[90px] lg:h-[90px] object-fit"
           src="/public/problemermedskrald/fast-file.svg"
           alt="c02"
         />
@@ -165,9 +172,9 @@ import Banner from "../components/Banner.astro";
       </div>
 
       <!-- nøgle -->
-      <div class="flex flex-col items-center justify-center gap-6 p-4">
+      <div class="flex flex-col items-center justify-center gap-6 p-4 hover:scale-125 transform transition duration-300 ease-in-out">
         <img
-          class="w-[80px] h-[80px] md:w-[100px] md:h-[100px] object-fit"
+          class="w-[70px] h-[70px] lg:w-[90px] lg:h-[90px] object-fit"
           src="/public/problemermedskrald/lock.svg"
           alt="c02"
         />
@@ -177,9 +184,9 @@ import Banner from "../components/Banner.astro";
       </div>
 
       <!-- floppy-disk -->
-      <div class="flex flex-col items-center justify-center gap-6 p-4">
+      <div class="flex flex-col items-center justify-center gap-6 p-4 hover:scale-125 transform transition duration-300 ease-in-out">
         <img
-          class="w-[80px] h-[80px] md:w-[100px] md:h-[100px] object-fit"
+          class="w-[70px] h-[70px] lg:w-[90px] lg:h-[90px] object-fit"
           src="/public/problemermedskrald/floppy-disk.svg"
           alt="c02"
         />
@@ -199,7 +206,7 @@ import Banner from "../components/Banner.astro";
   <section class="p-6 pb-16">
     <h2 class="lg:mx-20 pb-12">Vidste du at</h2>
     <div
-      class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-20 max-w-screen-lg mx-auto"
+      class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-14 max-w-screen-lg mx-auto"
     >
       <!-- card 1 -->
 
@@ -207,7 +214,7 @@ import Banner from "../components/Banner.astro";
         class="flex flex-col items-center justify-center gap-6 border border-black p-4"
       >
         <img
-          class="w-[200px] h-[150px] md:w-[280px] md:h-[230px] object-fit"
+          class="w-[200px] h-[150px] md:w-[280px] md:h-[230px] object-fit "
           src="/public/vidsteduat/kurve.svg"
           alt=""
         />
